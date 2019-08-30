@@ -1,0 +1,45 @@
+{% extends 'basic_common/base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <form class="form-s" method="post" role="form" enctype="multipart/form-data">
+            <input id="input-img" name="file" type="file" class="file"  data-show-preview="false">
+        </form>
+    </div><!--/row-->
+</div><!--/.container-->
+
+<div class="tech-img-content" style="background-color: yellow">
+    <div class="title-o" style="background-color: #ffffff">
+        <div class="title-s">
+            <h4>Before</h4>
+        </div>
+    </div>
+    <div class="tech-canvas-container">
+<!--        <img  class="img-show" src="{{ url_for('static', filename='./images/' + img_name ) }}" alt=""/>-->
+    </div>
+</div>
+
+<div class="tech-img-content-r" style="background-color: yellow">
+    <div class="title-o" style="background-color: #ffffff">
+        <div class="title-s">
+            <h4>After</h4>
+        </div>
+    </div>
+    <div class="tech-canvas-container">
+<!--        <img  class="img-show" src="{{ url_for('static', filename='./images/' + img_name ) }}" alt="你的图片被外星人劫持了～～"/>-->
+    </div>
+</div>
+{% endblock %}
+
+{% block title %}
+    YShun's Image Process
+{% endblock %}
+
+{% block body_title %}
+<div class="title-o">
+    <div class="title-s">
+        <h4>Image Process with Baidu AI API</h4>
+    </div>
+</div>
+{% endblock %}
