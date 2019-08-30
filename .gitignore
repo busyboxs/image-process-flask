@@ -1,1 +1,4 @@
 ./static/iamges/*
+id.md
+.idea/
+__pycache__
